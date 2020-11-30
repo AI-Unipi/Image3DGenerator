@@ -87,3 +87,36 @@ model.fit(x = training_generator,
 ```
 
 # <a name="examples"></a>Examples :eyes:
+
+Two examples with codes and outputs are available at the examples folder. Below you will find visual examples with the intention to help the user understand how the class treats the data during training.
+
+## Visual Examples
+
+**1)** Grayscale CT scan <br >
+Transformations applied: Rotation, Noise, Normalisation
+
+Original            |  Transformed
+:-------------------------:|:-------------------------:
+![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/ct_o.gif)  |  ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/ct_t.gif)
+
+**2)** RGB gif <br >
+Transformations applied: Rotation, Noise
+
+Original            |  Transformed
+:-------------------------:|:-------------------------:
+![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/dog_o.gif)  |  ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/dog_t.gif)
+
+
+**3)** RGB gif <br >
+Transformations applied: Rotation
+
+Original            |  Transformed
+:-------------------------:|:-------------------------:
+![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/cat_o.gif)  |  ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/cat_t.gif)
+
+**4)** RGB gif <br >
+Transformations applied: Noise
+
+Original            |  Transformed
+:-------------------------:|:-------------------------:
+![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/dog1_o.gif)  |  ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/dog1_t.gif)
