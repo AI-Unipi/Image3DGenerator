@@ -7,6 +7,7 @@
 * [Usage](#usage)
 * [Data/File Formats](#data-format)
 * [Examples](#examples)
+* [Contribution](#contribution)
 
 
 # <a name="introduction"></a>Introduction :postal_horn:
@@ -93,11 +94,23 @@ Two examples with codes and outputs are available at the examples folder. Below 
 ## Visual Examples
 
 **1)** Grayscale CT scan <br >
-Transformations applied: Rotation, Noise, Normalisation
+Transformations applied: Rotation, Noise, Normalisation <br >
+
+**GIF**
+
 
 Original            |  Transformed
 :-------------------------:|:-------------------------:
 ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/ct_o.gif)  |  ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/ct_t.gif)
+
+
+
+**3D**
+
+Original --> Transformed
+ ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/ct.png)
+
+
 
 **2)** RGB gif <br >
 Transformations applied: Rotation, Noise
@@ -117,6 +130,14 @@ Original            |  Transformed
 **4)** RGB gif <br >
 Transformations applied: Noise
 
-Original            |  Transformed
+Original | Transformed
 :-------------------------:|:-------------------------:
 ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/dog1_o.gif)  |  ![](https://github.com/AI-Unipi/Image3DGenerator/blob/master/gifs_images/dog1_t.gif)
+
+# <a name="contribution"></a>Contribution :metal:
+
+This is a quarantine project developed by two recent data science graduates so there is undeniably room for improvement. Pull requests are more than welcome. We would be glad to hear your feedback and have a chat. For major changes, please open an issue first to discuss what you would like to change. 
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
