@@ -40,4 +40,19 @@ The options we provide (yet) are the following:
 
 # <a name="data-format"></a>Data/File Formats :file_folder:
 
+In order to use this class your data and folders should be structured as follows:
+
+----data-folder/data.npy <br />
+--Image3DGenerator.py <br />
+--your_python_script
+
+**Notes:** <br />
+:zap: The data folder should contain each 3D object **seperately**, each in a numpy array form (.npy) <br />
+:zap: Each 3D object should have the following dimension order: (object_length, object_height, object_width, number_of_channels (if grayscaled can be skipped)). <br >
+To use the class you need to do the following steps:
+- Create a dictionary containing the ID of the training (and validation examples if applicable).
+- Create a dictionary containing all the training (and validation) IDs along with their classes. **The classes should be integers starting with 0**.
+
+
+
 # <a name="examples"></a>Examples :eyes:
