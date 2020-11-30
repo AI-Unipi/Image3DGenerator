@@ -53,6 +53,37 @@ To use the class you need to do the following steps:
 - Create a dictionary containing the ID of the training (and validation examples if applicable).
 - Create a dictionary containing all the training (and validation) IDs along with their classes. **The classes should be integers starting with 0**.
 
+After having all the prerequirements ready you simply type the following:
 
+```python
+from Image3DGenerator import DataGenerator
+
+params = { 
+          'dim': your object's dimensions,
+          'batch_size': opted batch size,
+          'n_classes': number of your classes,
+          'n_channels': 1 if grayscale, 3 if RGB,
+          'rotation': True in case you want to apply random roation during training,
+          'normalisation': True,
+          'min_bound': in case normalisation is True, specify the minimum voxel value of your objects,
+          'max_bound': in case normalisation is True, specify the maximum voxel value of your objects,
+          'gaussian_noise': True,
+          'noise_mean': 0,
+          'noise_std': 0.01,
+          'shuffle': True,
+          'rotate_std':45,
+          'path':'./data' #path of the folder containing the data,
+          'display_ID':False}
+
+# Generators
+training_generator = DataGenerator(dictionary['train'], labels, **params)
+validation_generator = DataGenerator(dictionary['validation'], labels, **params)
+
+#After creating and compliling your tf model
+
+model.fit(x = training_generator,
+          epochs= no_epochs, 
+          validation_data= validation_generator)
+```
 
 # <a name="examples"></a>Examples :eyes:
